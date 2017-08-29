@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.firebaseauthnotification.MainActivity">
+
+    <EditText
+        android:hint="UserName"
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Password"
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Sign in"
+        android:id="@+id/btnLogin"
+        android:onClick="authenticateUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Sign up"
+        android:id="@+id/btnSignin"
+        android:onClick="authenticateUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Sign in with google"
+        android:id="@+id/btnGoogleSignIn"
+        android:onClick="authenticateUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.facebook.login.widget.LoginButton
+        android:text="Sign in with facebook"
+        android:id="@+id/btnFacebookSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
